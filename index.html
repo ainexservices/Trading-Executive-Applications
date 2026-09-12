@@ -104,7 +104,9 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
-a{text-decoration:none;color:inherit}.container{width:100%;max-width:1180px;margin:auto;padding:0 22px}
+a{text-decoration:none;color:inherit}body{ text-transform:capitalize; }
+
+.container{width:100%;max-width:1180px;margin:auto;padding:0 22px}
 .navbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(223,233,228,.9)}
 .nav{max-width:1180px;margin:auto;padding:13px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px}
 .logo{display:flex;align-items:center;gap:10px;color:var(--green2)}.logo-icon{width:44px;height:44px;display:grid;place-items:center;background:linear-gradient(145deg,#0bb477,#087d53);color:#fff;border-radius:13px;box-shadow:0 10px 22px rgba(8,125,83,.22)}.logo-icon svg{width:34px;height:34px}.logo-text{display:flex;flex-direction:column;line-height:1.05}.logo-text strong{font-size:15px;color:#12221d}.logo-text span{margin-top:4px;font-size:9px;font-weight:800;letter-spacing:1.7px;color:var(--green)}
@@ -124,8 +126,11 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
 /* PREMIUM MULTI-STEP APPLICATION FORM */
 .application{padding:30px 0 90px;background:linear-gradient(180deg,#f5faf7 0%,#eef6f2 100%)}
 .application-shell{max-width:920px!important;margin:0 auto;border:1px solid #dce9e2!important;box-shadow:0 24px 70px rgba(7,55,35,.10)!important;padding:38px!important}
-.form-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:25px}.form-kicker{display:inline-flex;padding:6px 10px;border-radius:999px;background:#e8f7ef;color:#087c50;font-size:11px;font-weight:900;letter-spacing:.6px;text-transform:uppercase}.form-head h2{font-size:38px!important;line-height:1.15;margin-top:12px}.form-trust{padding:10px 13px;border:1px solid #dbe9e2;border-radius:10px;background:#f8fcfa;color:#087c50;font-size:12px;font-weight:800;white-space:nowrap}.progress-wrap{padding:18px 18px 14px;border:1px solid #e1ebe6;border-radius:16px;background:#f8fbf9;margin-bottom:30px}.progress-top{display:flex;justify-content:space-between;color:#51645b;font-size:12px;font-weight:800;margin-bottom:9px}.progress-track{height:7px;background:#e5eee9;border-radius:99px;overflow:hidden}.progress-bar{height:100%;width:33%;background:linear-gradient(90deg,#087c50,#20c77f);border-radius:99px;transition:width .3s ease}.step-dots{display:flex;align-items:center;justify-content:center;margin-top:13px}.step-dot{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#e7eee9;color:#708078;font-size:12px;font-weight:900}.step-dot.active{background:#08a66a;color:#fff}.step-dot.current{box-shadow:0 0 0 4px rgba(8,166,106,.12)}.step-line{width:70px;height:2px;background:#dfe8e3}.form-step{display:none}.form-step.active{display:block;animation:stepIn .25s ease}@keyframes stepIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.step-heading{display:flex;gap:14px;align-items:center;margin-bottom:25px}.step-heading>span{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#08271a;color:#b8f5d7;font-weight:900}.step-heading h3{font-size:23px}.step-heading p{font-size:13px;color:#718078;margin-top:2px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field{min-width:0}.field label,.choice-field legend{display:block;font-size:13px;font-weight:900;color:#21352c;margin-bottom:8px}.field label b,.choice-field legend b{color:#08a66a}.field input,.field select,.field textarea{border:1px solid #d6e2dc;border-radius:12px;background:#fbfdfc;padding:14px 15px;font-size:15px;transition:.2s}.field input:hover,.field select:hover,.field textarea:hover{border-color:#b8cec2}.field input:focus,.field select:focus,.field textarea:focus{border-color:#08a66a;box-shadow:0 0 0 4px rgba(8,166,106,.10)}.field textarea{min-height:150px}.field-error{display:block;min-height:16px;margin-top:5px;color:#c12828;font-size:11px;font-weight:700}.field.invalid input,.field.invalid select,.field.invalid textarea,.choice-field.invalid .choice-grid{border-color:#d33}.choice-field{border:0;padding:0;margin:0}.choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.choice-grid.two{grid-template-columns:repeat(2,1fr)}.choice-card{position:relative;display:flex;align-items:center;gap:10px;border:1px solid #d7e3dc;background:#fff;border-radius:13px;padding:13px;cursor:pointer;min-height:65px;transition:.2s}.choice-card:hover{border-color:#08a66a;transform:translateY(-1px)}.choice-card input{position:absolute;opacity:0;pointer-events:none}.choice-card:has(input:checked){border-color:#08a66a;background:#effaf4;box-shadow:0 0 0 3px rgba(8,166,106,.08)}.choice-icon{width:32px;height:32px;display:grid;place-items:center;border-radius:9px;background:#edf7f2}.choice-card strong{display:block;font-size:13px}.choice-card small{display:block;color:#718078;font-size:10px;margin-top:2px}.textarea-meta{display:flex;justify-content:space-between}.textarea-meta>small:last-child{color:#7b8881;font-size:11px}.security-form{display:flex;gap:12px;align-items:flex-start;margin-top:0;background:#f5f8f6}.security-form>span{font-size:22px}.security-form p{margin:4px 0 0;color:#65736c;font-size:12px}.consent-card{display:flex;align-items:flex-start;gap:12px;padding:15px;border:1px solid #dce8e1;border-radius:12px;background:#f7faf8;cursor:pointer;font-size:12px!important;font-weight:700!important}.consent-card input{width:18px;height:18px;accent-color:#08a66a;flex:0 0 auto;margin-top:1px}.checkmark{display:none}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important}.step-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:25px;padding-top:20px;border-top:1px solid #e8efeb}.back-btn,.next-btn{border:0;border-radius:11px;padding:13px 18px;font-size:14px;font-weight:900;cursor:pointer}.back-btn{background:#eef4f1;color:#355047}.next-btn,.submit-btn{background:linear-gradient(135deg,#087c50,#08a66a);color:#fff}.next-btn{min-width:210px}.submit-btn{display:flex;align-items:center;justify-content:center;gap:20px;min-width:260px}.submit-arrow{font-size:20px}.message{display:none;align-items:flex-start;gap:12px;margin-top:20px;padding:17px;border-radius:12px}.message strong{display:block}.message span{display:block;font-size:13px;margin-top:3px}.success{background:#eaf8f0;color:#087c50}.error{background:#fff1f1;color:#a11}.draft-note{text-align:center;color:#849089;font-size:11px;margin-top:16px}
+.form-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:25px}.form-kicker{display:inline-flex;padding:6px 10px;border-radius:999px;background:#e8f7ef;color:#087c50;font-size:11px;font-weight:900;letter-spacing:.6px;text-transform:capitalize}.form-head h2{font-size:38px!important;line-height:1.15;margin-top:12px}.form-trust{padding:10px 13px;border:1px solid #dbe9e2;border-radius:10px;background:#f8fcfa;color:#087c50;font-size:12px;font-weight:800;white-space:nowrap}.progress-wrap{padding:18px 18px 14px;border:1px solid #e1ebe6;border-radius:16px;background:#f8fbf9;margin-bottom:30px}.progress-top{display:flex;justify-content:space-between;color:#51645b;font-size:12px;font-weight:800;margin-bottom:9px}.progress-track{height:7px;background:#e5eee9;border-radius:99px;overflow:hidden}.progress-bar{height:100%;width:33%;background:linear-gradient(90deg,#087c50,#20c77f);border-radius:99px;transition:width .3s ease}.step-dots{display:flex;align-items:center;justify-content:center;margin-top:13px}.step-dot{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#e7eee9;color:#708078;font-size:12px;font-weight:900}.step-dot.active{background:#08a66a;color:#fff}.step-dot.current{box-shadow:0 0 0 4px rgba(8,166,106,.12)}.step-line{width:70px;height:2px;background:#dfe8e3}.form-step{display:none}.form-step.active{display:block;animation:stepIn .25s ease}@keyframes stepIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.step-heading{display:flex;gap:14px;align-items:center;margin-bottom:25px}.step-heading>span{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#08271a;color:#b8f5d7;font-weight:900}.step-heading h3{font-size:23px}.step-heading p{font-size:13px;color:#718078;margin-top:2px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field{min-width:0}.field label,.choice-field legend{display:block;font-size:13px;font-weight:900;color:#21352c;margin-bottom:8px}.field label b,.choice-field legend b{color:#08a66a}.field input,.field select,.field textarea{border:1px solid #d6e2dc;border-radius:12px;background:#fbfdfc;padding:14px 15px;font-size:15px;transition:.2s}.field input:hover,.field select:hover,.field textarea:hover{border-color:#b8cec2}.field input:focus,.field select:focus,.field textarea:focus{border-color:#08a66a;box-shadow:0 0 0 4px rgba(8,166,106,.10)}.field textarea{min-height:150px}.field-error{display:block;min-height:16px;margin-top:5px;color:#c12828;font-size:11px;font-weight:700}.field.invalid input,.field.invalid select,.field.invalid textarea,.choice-field.invalid .choice-grid{border-color:#d33}.choice-field{border:0;padding:0;margin:0}.choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.choice-grid.two{grid-template-columns:repeat(2,1fr)}.choice-card{position:relative;display:flex;align-items:center;gap:10px;border:1px solid #d7e3dc;background:#fff;border-radius:13px;padding:13px;cursor:pointer;min-height:65px;transition:.2s}.choice-card:hover{border-color:#08a66a;transform:translateY(-1px)}.choice-card input{position:absolute;opacity:0;pointer-events:none}.choice-card:has(input:checked){border-color:#08a66a;background:#effaf4;box-shadow:0 0 0 3px rgba(8,166,106,.08)}.choice-icon{width:32px;height:32px;display:grid;place-items:center;border-radius:9px;background:#edf7f2}.choice-card strong{display:block;font-size:13px}.choice-card small{display:block;color:#718078;font-size:10px;margin-top:2px}.textarea-meta{display:flex;justify-content:space-between}.textarea-meta>small:last-child{color:#7b8881;font-size:11px}.security-form{display:flex;gap:12px;align-items:flex-start;margin-top:0;background:#f5f8f6}.security-form>span{font-size:22px}.security-form p{margin:4px 0 0;color:#65736c;font-size:12px}.consent-card{display:flex;align-items:flex-start;gap:12px;padding:15px;border:1px solid #dce8e1;border-radius:12px;background:#f7faf8;cursor:pointer;font-size:12px!important;font-weight:700!important}.consent-card input{width:18px;height:18px;accent-color:#08a66a;flex:0 0 auto;margin-top:1px}.checkmark{display:none}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important}.step-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:25px;padding-top:20px;border-top:1px solid #e8efeb}.back-btn,.next-btn{border:0;border-radius:11px;padding:13px 18px;font-size:14px;font-weight:900;cursor:pointer}.back-btn{background:#eef4f1;color:#355047}.next-btn,.submit-btn{background:linear-gradient(135deg,#087c50,#08a66a);color:#fff}.next-btn{min-width:210px}.submit-btn{display:flex;align-items:center;justify-content:center;gap:20px;min-width:260px}.submit-arrow{font-size:20px}.message{display:none;align-items:flex-start;gap:12px;margin-top:20px;padding:17px;border-radius:12px}.message strong{display:block}.message span{display:block;font-size:13px;margin-top:3px}.success{background:#eaf8f0;color:#087c50}.error{background:#fff1f1;color:#a11}.draft-note{text-align:center;color:#849089;font-size:11px;margin-top:16px}
 @media(max-width:700px){.application-shell{padding:22px!important}.form-head{display:block}.form-head h2{font-size:29px!important}.form-trust{display:inline-flex;margin-top:14px}.form-grid{grid-template-columns:1fr}.choice-grid{grid-template-columns:1fr}.choice-grid.two{grid-template-columns:1fr}.step-actions{justify-content:stretch}.back-btn,.next-btn,.submit-btn{flex:1;min-width:0}.step-line{width:35px}}
+
+.force-uppercase { text-transform: uppercase; }
+#dob { text-transform: none; letter-spacing: 0.5px; }
 </style>
 
 </head>
@@ -503,7 +508,7 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
       <div class="step-heading"><span>01</span><div><h3>Personal Details</h3><p>Tell Us How We Can Contact You.</p></div></div>
       <div class="form-grid">
         <div class="field"><label for="name">Full Name <b>*</b></label><input type="text" id="name" name="name" class="title-case" placeholder="Enter Full Name" autocomplete="name" required><small class="field-error"></small></div>
-        <div class="field"><label for="age">Age <b>*</b></label><input type="number" id="age" name="age" min="18" max="80" inputmode="numeric" placeholder="Enter Your Age" autocomplete="bday-year" required><small class="field-error"></small></div>
+        <div class="field"><label for="age">Age <b>*</b></label><input type="text" id="dob" name="dob" inputmode="numeric" maxlength="10" placeholder="DD/MM/YYYY" autocomplete="bday" required><small class="field-error"></small></div>
         <div class="field"><label for="mobile">Mobile Number <b>*</b></label><input type="tel" id="mobile" name="mobile" class="number-only" maxlength="10" inputmode="numeric" autocomplete="tel" placeholder="10 Digit Mobile Number" required><small class="field-error"></small></div>
         <div class="field"><label for="whatsapp">WhatsApp Number <b>*</b></label><input type="tel" id="whatsapp" name="whatsapp" class="number-only" maxlength="10" inputmode="numeric" autocomplete="tel" placeholder="10 Digit WhatsApp Number" required><small class="field-error"></small></div>
         <div class="field full"><label for="email">Email Address <b>*</b></label><input type="email" id="email" name="email" placeholder="Enter Email Address" autocomplete="email" required><small class="field-error"></small></div>
@@ -581,6 +586,7 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
             <p>Ainex Group और Founder Aaditya Pandey से social media पर connect करें और recruitment updates देखें।</p>
             <div class="social-list">
                 <a href="https://www.instagram.com/aadityaprasadpandey/" target="_blank" rel="noopener noreferrer" class="social-btn">📸 Instagram</a>
+                <a href="https://www.youtube.com/results?search_query=Ainex+Traders" target="_blank" rel="noopener noreferrer" class="social-btn">▶️ Ainex Traders On YouTube</a>
                 <a href="#apply" class="social-btn">📝 Apply Now</a>
             </div>
         </div>
@@ -720,8 +726,26 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
   const storageKey = 'ainexTradingApplicationDraftV3';
   let currentStep = 1;
 
-  const titleCase = (value) => value.toLowerCase().replace(/(^|[\s.'-])([a-z])/g, (_, p, c) => p + c.toUpperCase());
   const fields = [...form.querySelectorAll('input, select, textarea')].filter(el => el.name && el.name !== 'website');
+  const textDataFields = fields.filter(el => ['text','email','textarea'].includes(el.type || el.tagName.toLowerCase()) && el.id !== 'dob');
+  textDataFields.forEach(field => {
+    field.classList.add('force-uppercase');
+    field.addEventListener('input', () => {
+      const start = field.selectionStart;
+      const end = field.selectionEnd;
+      field.value = field.value.toUpperCase();
+      if (document.activeElement === field && start !== null && end !== null) field.setSelectionRange(start, end);
+    });
+  });
+
+  const dobField = document.getElementById('dob');
+  dobField.addEventListener('input', () => {
+    let digits = dobField.value.replace(/\D/g, '').slice(0, 8);
+    let formatted = digits;
+    if (digits.length > 2) formatted = digits.slice(0,2) + '/' + digits.slice(2);
+    if (digits.length > 4) formatted = digits.slice(0,2) + '/' + digits.slice(2,4) + '/' + digits.slice(4);
+    dobField.value = formatted;
+  });
 
   function updateProgress(step) {
     currentStep = step;
@@ -775,7 +799,7 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
       }
       const value = field.value.trim();
       if (!value) { showError(field, 'This Field Is Required.'); valid = false; return; }
-      if (field.id === 'age' && (!/^\d+$/.test(value) || Number(value) < 18 || Number(value) > 80)) { showError(field, 'Enter A Valid Age Between 18 And 80.'); valid = false; return; }
+      if (field.id === 'dob' && !/^\d{2}\/\d{2}\/\d{4}$/.test(value)) { showError(field, 'Enter Date Of Birth In DD/MM/YYYY Format.'); valid = false; return; }
       if ((field.id === 'mobile' || field.id === 'whatsapp') && !/^\d{10}$/.test(value)) { showError(field, 'Enter A Valid 10 Digit Number.'); valid = false; return; }
       if (field.id === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) { showError(field, 'Enter A Valid Email Address.'); valid = false; return; }
       if (field.id === 'about' && value.length < 10) { showError(field, 'Please Enter At Least 10 Characters.'); valid = false; return; }
@@ -793,7 +817,7 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
     fields.forEach(f => {
       if (f.type === 'radio') { if (f.checked) data[f.name] = f.value; }
       else if (f.type === 'checkbox') data[f.name] = f.checked;
-      else data[f.name] = f.value;
+      else data[f.name] = (f.id === 'dob' || f.type === 'tel') ? f.value : f.value.toUpperCase();
     });
     try { localStorage.setItem(storageKey, JSON.stringify(data)); } catch (_) {}
   }
@@ -863,9 +887,10 @@ footer{background:#06130f;color:#b7c9c1;text-align:center;padding:42px 20px}foot
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-    data.age = String(data.age || '').trim();
-    // Keep the existing Google Apps Script column compatibility while the visible form collects Age.
-    data.dob = data.age;
+    data.dob = String(data.dob || '').trim();
+    Object.keys(data).forEach(key => {
+      if (key !== 'dob' && key !== 'website' && typeof data[key] === 'string') data[key] = data[key].toUpperCase();
+    });
     data.confirmation = form.querySelector('#confirm').checked ? 'YES' : '';
 
     const controller = new AbortController();
